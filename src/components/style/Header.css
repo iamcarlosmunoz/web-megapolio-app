@@ -1,0 +1,13 @@
+.container-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E74C3C;
+}
+
+.container-header h1 {
+    padding: 20px;
+    color: #fff;
+    font-weight: 700;
+}

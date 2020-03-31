@@ -1,9 +1,16 @@
 import React from 'react';
-import './App.css'
+import { Provider } from 'react-redux'
 import Welcome from './pages/Welcome'
+import store from './redux/store'
+import './App.css'
 
 const App = () => (
-  <Welcome />
+  <Provider store={store}>
+    <main>
+      
+      <Welcome />
+    </main>
+  </Provider>
 )
 
 export default App;
