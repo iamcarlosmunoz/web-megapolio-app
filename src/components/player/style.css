@@ -1,0 +1,31 @@
+.item-player {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 155px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.item-player img {
+    width: 80px;
+}
+
+.item-player h3 {
+    padding-top: 5px;
+}
+
+.item-player button {
+    background-color: #E74C3C;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    border: none;
+}

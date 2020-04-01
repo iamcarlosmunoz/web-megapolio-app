@@ -33,38 +33,6 @@
     flex-wrap: wrap;
 }
 
-.container-player-list .container .player-list article {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 155px;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.container-player-list .container .player-list article img {
-    width: 80px;
-}
-
-.container-player-list .container .player-list article h3 {
-    padding-top: 5px;
-}
-
-.container-player-list .container .player-list article button {
-    background-color: #E74C3C;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    color: #fff;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 5px;
-    border: none;
-}
-
 .container-player-list .btn-open-add-player {
     width: 50%;
     margin: 10px;
