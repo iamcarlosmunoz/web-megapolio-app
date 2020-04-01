@@ -2,7 +2,7 @@ import React from 'react'
 import Player from '../player/index'
 import './style.css'
 
-const Page = ({ players }) => (
+const Page = ({ players, openNewPlayer}) => (
     <section className="container-player-list">
         <div className="container">
             <h2>Jugadores</h2>
@@ -17,7 +17,7 @@ const Page = ({ players }) => (
             }
             </div>
         </div>
-        <button className="btn-open-add-player">Nuevo Jugador</button>
+        <button className="btn-open-add-player" onClick={openNewPlayer}>Nuevo Jugador</button>
     </section>
 )
 

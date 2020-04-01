@@ -1,7 +1,7 @@
 export const ADD_PLAYER = 'ADD_PLAYER'
 export const DELETE_PLAYER = 'DELETE_PLAYER'
-export const OPEN_ADD_PLAYER = 'OPEN_ADD_PLAYER'
-export const CLOSE_ADD_PLAYER = 'CLOSE_ADD_PLAYER'
+export const OPEN_NEW_PLAYER = 'OPEN_NEW_PLAYER'
+export const CLOSE_NEW_PLAYER = 'CLOSE_NEW_PLAYER'
 
 export const add_player_action = (player) => {
     return {
@@ -17,14 +17,14 @@ export const delete_player_action = (player) => {
     }
 }
 
-export const open_add_player_action = () => {
+export const open_new_player_action = () => {
     return {
-        type: OPEN_ADD_PLAYER
+        type: OPEN_NEW_PLAYER
     }
 }
 
-export const close_add_player_action = () => {
+export const close_new_player_action = () => {
     return {
-        type: CLOSE_ADD_PLAYER
+        type: CLOSE_NEW_PLAYER
     }
 }

@@ -1,4 +1,4 @@
-import { ADD_PLAYER, DELETE_PLAYER, OPEN_ADD_PLAYER, CLOSE_ADD_PLAYER } from '../actions/gameActions'
+import { ADD_PLAYER, DELETE_PLAYER, OPEN_NEW_PLAYER, CLOSE_NEW_PLAYER } from '../actions/gameActions'
 
 const default_game = {
     players: [
@@ -31,7 +31,8 @@ const default_game = {
         id: 6,
         name: 'Carlos',
         img: '../images/icon-player.png'
-    }]
+    }],
+    newPlayer: false
 }
 
 const game = (state = default_game, action) => {
@@ -52,14 +53,18 @@ const game = (state = default_game, action) => {
             }
         }
 
-        case OPEN_ADD_PLAYER: {
-            document.getElementById("myModal").style.display = 'block';
-            return state
+        case OPEN_NEW_PLAYER: {
+            return {
+                ...state,
+                newPlayer: true
+            }
         }
 
-        case CLOSE_ADD_PLAYER: {
-            document.getElementById("myModal").style.display = 'none';
-            return state
+        case CLOSE_NEW_PLAYER: {
+            return {
+                ...state,
+                newPlayer: false
+            }
         }
 
         default: return state

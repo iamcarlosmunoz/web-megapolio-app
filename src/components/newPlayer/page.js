@@ -1,13 +1,11 @@
 import React from 'react'
-import './style/NewPlayer.css'
-import { connect } from 'react-redux'
-import { close_add_player_action } from '../redux/actions/gameActions'
+import './style.css'
 
-const NewPlayer = ({ close_add_player_action }) => (
+const Page = ({ closeNewPlayer }) => (
     <div id="myModal" className="modal">
         <div className="modal-content">
             <div className="modal-header">
-                <span onClick={() => close_add_player_action()} className="close">&times;</span>
+                <span onClick={closeNewPlayer} className="close">&times;</span>
                 <h2>Nuevo Jugador</h2>
             </div>
                 <div className="modal-body">
@@ -21,8 +19,4 @@ const NewPlayer = ({ close_add_player_action }) => (
     </div>
 )
 
-const mapDispatchToProps = {
-    close_add_player_action
-}
-
-export default connect(null,mapDispatchToProps)(NewPlayer)
+export default Page
