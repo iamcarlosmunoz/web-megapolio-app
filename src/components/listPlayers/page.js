@@ -12,6 +12,7 @@ const Page = ({ players, openNewPlayer}) => (
                     <Player 
                         player={player}
                         visible={true}
+                        key={player.id}
                     />
                 ))
             }

@@ -8,8 +8,8 @@ const Page = ({ closeNewPlayer }) => (
                 <span onClick={closeNewPlayer} className="close">&times;</span>
                 <h2>Nuevo Jugador</h2>
             </div>
-                <div className="modal-body">
-                <p>Some text in the Modal Body</p>
+            <div className="modal-body">
+                <input className="modal-name-player" placeholder="Ingrese nombre"></input>
                 <p>Some other text...</p>
             </div>
             <div className="modal-footer">
