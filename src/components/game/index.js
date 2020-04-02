@@ -4,6 +4,7 @@ import Header from '../header/index'
 import ListPlayers from '../listPlayers/index'
 import NewPlayer from '../newPlayer/index'
 import StateTable from '../stateTable/index'
+import ScannerCode from '../scannerCode/index'
 import './style.css'
 
 const Game = ({ newPlayer, startGame }) => {
@@ -20,6 +21,8 @@ const Game = ({ newPlayer, startGame }) => {
                 {
                     startGame && <StateTable />
                 }
+
+            <ScannerCode />
         </main>
     )
 }
