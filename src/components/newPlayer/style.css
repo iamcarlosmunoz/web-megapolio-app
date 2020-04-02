@@ -20,12 +20,34 @@
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    max-width: 400px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
+}
+
+.modal-avartars-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden; 
+    overflow-x: auto;
+    padding: 20px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+.modal-avartars-list img {
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.modal-avartars-list img:hover {
+    border: solid 1px #5cb85c;
 }
 
 /* Add Animation */
@@ -39,31 +61,69 @@
     to {top:0; opacity:1}
 }
 
-/* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #E74C3C;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-header h2 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.modal-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 16px;
+    color: #3333;
+}
+
+.modal-name-player {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    border: solid 2px #888;
+    margin: 10px;
+    width: 70%;
+    text-align: center;
+    color: #333;
+}
+.modal-name-player:focus {
+    border-radius: 10px;
+    border: solid 2px #E74C3C;
+}
 
 .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #E74C3C;
     color: white;
-} 
+}
+
+.modal-footer .btn-add-player, .modal-footer .btn-cancel-player {
+    background-color: #fff;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #E74C3C;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.modal-footer .btn-add-player {
+    margin-right: 10px;
+}

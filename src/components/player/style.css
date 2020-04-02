@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    min-width: 100px;
     height: 155px;
     border-radius: 10px;
     margin-right: 10px;
@@ -20,6 +20,7 @@
 }
 
 .item-player button {
+    display: none;
     background-color: #E74C3C;
     border-radius: 5px;
     font-size: 0.8rem;
@@ -28,4 +29,8 @@
     padding-right: 10px;
     margin-top: 5px;
     border: none;
+}
+
+.item-player:hover > button{
+    display: inline-block;
 }

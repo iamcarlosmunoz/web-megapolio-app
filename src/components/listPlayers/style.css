@@ -9,8 +9,10 @@
 
 .container-player-list .container {
     width: auto;
+    min-width: 400px;
+    min-height: 200px;
     display: flex;
-    padding: 20px;
+    padding: 20px 10px 10px 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -33,7 +35,7 @@
     flex-wrap: wrap;
 }
 
-.container-player-list .btn-open-add-player {
+.container-player-list .btn-open-add-player, .btn-start-game {
     width: 52%;
     margin: 10px;
     padding: 10px;
@@ -43,4 +45,12 @@
     font-weight: 700;
     border: none;
     border-radius: 10px;
+    max-width: 400px;
+}
+.container-player-list .btn-start-game {
+    margin-top: 0;
+}
+.btn-start-game:disabled {
+    background-color: #EFF0F1;
+    color: #fff;
 }

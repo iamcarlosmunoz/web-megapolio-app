@@ -3,24 +3,30 @@ import { connect } from 'react-redux'
 import Header from '../header/index'
 import ListPlayers from '../listPlayers/index'
 import NewPlayer from '../newPlayer/index'
+import StateTable from '../stateTable/index'
 import './style.css'
 
-const Game = ({ players, newPlayer }) => {
+const Game = ({ newPlayer, startGame }) => {
 
     return (
         <main>
             <Header />
-            <ListPlayers />
-            {
-                newPlayer && <NewPlayer />
-            }
+                {
+                    startGame || <ListPlayers />
+                }
+                {
+                    newPlayer && <NewPlayer />
+                }
+                {
+                    startGame && <StateTable />
+                }
         </main>
     )
 }
 
 const mapStateToProps = state => ({
-    players: state.game.players,
-    newPlayer: state.game.newPlayer
+    newPlayer: state.game.newPlayer,
+    startGame: state.game.startGame
 })
 
 export default connect(mapStateToProps)(Game)

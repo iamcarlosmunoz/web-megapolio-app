@@ -1,0 +1,72 @@
+.state-table {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.state-table h2 {
+    padding: 10px;
+    font-weight: 700;
+}
+
+.state-table .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFF0F1;
+    border-radius: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.state-table .container .player {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid 2px #DEDEDE;
+}
+
+.state-table .container .player .item-player {
+    margin: 0;
+}
+
+.state-table .container .states {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.state-table .container .states .item-state.cash {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.state-table .container .states .item-state {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+
+.state-table .container .states .item-state img {
+    width: 30px;
+    padding-right: 5px;
+}
