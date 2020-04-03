@@ -1,34 +1,33 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import QrReader from 'react-qr-reader'
+import './style.css'
  
-class ScannerCode extends Component {
-  state = {
-    result: 'No result'
-  }
- 
-  handleScan = data => {
+const ScannerCode = () => {
+
+  const [result, setResult] = useState('No result')
+
+  const handleScan = data => {
     if (data) {
-      this.setState({
-        result: data
-      })
+      setResult(data)
     }
   }
-  handleError = err => {
+  const handleError = err => {
     console.error(err)
   }
-  render() {
-    return (
-      <div>
-        <QrReader
+
+  return (
+    <div className="container-camera-scanner">
+      <QrReader
           delay={300}
-          onError={this.handleError}
-          onScan={this.handleScan}
-          style={{ width: '40%' }}
+          onError={handleError}
+          onScan={handleScan}
+          style={{ width: '400px' }}
+          facingMode={'environment'}
+          className={'camera-item'}
         />
-        <p>{this.state.result}</p>
-      </div>
-    )
-  }
+    </div>
+  )
+  
 }
 
 export default ScannerCode

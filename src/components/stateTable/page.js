@@ -5,8 +5,8 @@ import './style.css'
 
 const Page = ({ players }) => (
     <div className="state-table">
-        <h2>Tabla de Jugadores</h2>
         <div className="container">
+        <h2>Jugadores</h2>
             {
                 players.map( player => (
                     <div className="player" key={player.id}>
